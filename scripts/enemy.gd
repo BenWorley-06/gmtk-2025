@@ -15,6 +15,11 @@ var is_dead := false
 @export var max_view_angle := 270.0  # Degrees
 @export var default_view_angle := 90.0
 @export var chase_speed := 300.0
+
+#Added hit timer to give player time to react
+@export var time_before_hit := 0.3
+var hit_timer:=0.0
+
 var view_angle := default_view_angle;
 var view_distance := default_view_distance;
 var normal_speed := 50.0
